@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Love Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ffe6f0, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 20px;
+      background-color: #ff3366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e62e5c;
+    }
+
+    #effect-area {
+      position: fixed;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .emoji {
+      position: absolute;
+      animation: floatUp 3s ease-out forwards;
+      font-size: 36px;
+      user-select: none;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-250px) scale(1.8);
+        opacity: 0;
+      }
+    }
+
+    .sparkle {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      background: gold;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: sparkleAnim 3s ease-out forwards;
+      z-index: 1;
+    }
+
+    @keyframes sparkleAnim {
+      to {
+        transform: translateY(-180px) scale(2);
+        opacity: 0;
+      }
+    }
+
+    .confetti {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 50%;
+      animation: confettiFall 3s ease-out forwards;
+      z-index: 2;
+    }
+
+    @keyframes confettiFall {
+      to {
+        transform: translateY(300px) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="sendLove()">💖 Send Love</button>
+  <div id="effect-area"></div>
+
+  <!-- Sound -->
+  <audio id="pop-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_735b0b1955.mp3" preload="auto"></audio>
+
+  <script>
+    const emojis = ["❤️", "😘", "😍", "💋", "💖"];
+    const effectArea = document.getElementById("effect-area");
+    const sound = document.getElementById("pop-sound");
+
+    function sendLove() {
+      const emoji = document.createElement("div");
+      emoji.className = "emoji";
+      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      emoji.style.left = Math.random() * 100 - 50 + "px";
+      emoji.style.fontSize = 36 + Math.random() * 10 + "px";
+      effectArea.appendChild(emoji);
+      setTimeout(() => emoji.remove(), 3000);
+
+      // Sound
+      sound.currentTime = 0;
+      sound.play();
+
+      // Sparkles
+      for (let i = 0; i < 15; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
+        sparkle.style.left = Math.random() * window.innerWidth + "px";
+        sparkle.style.top = Math.random() * window.innerHeight + "px";
+        document.body.appendChild(sparkle);
+        setTimeout(() => sparkle.remove(), 3000);
+      }
+
+      // Confetti
+      for (let i = 0; i < 20; i++) {
+        const confetti = document.createElement("div");
+        confetti.className = "confetti";
+        confetti.style.left = (window.innerWidth / 2 + Math.random() * 150 - 75) + "px";
+        confetti.style.top = "0px";
+        confetti.style.backgroundColor = getRandomColor();
+        document.body.appendChild(confetti);
+        setTimeout(() => confetti.remove(), 3000);
+      }
+    }
+
+    function getRandomColor() {
+      const colors = ["#ff3366", "#ffcc00", "#66ff66", "#3399ff", "#cc33ff"];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+  </script>
+
+</body>
+</html>

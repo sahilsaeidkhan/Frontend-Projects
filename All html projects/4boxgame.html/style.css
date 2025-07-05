@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+   height: 100%;
+   width: 100%;
+   background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
+    display: flex;
+}
+.shape{
+
+ height: 200px;
+ width: 190px;
+ border: 2px solid black;
+ /*margin-left: 2px;
+ margin-top: 2px;*/
+ margin:4px;
+ display: flex;             
+ justify-content: center;  
+ align-items: center;  
+}
+#box1{
+    display: flex;
+}
+#box2{
+    display: flex;
+}
+h1{
+    text-align: center;
+}

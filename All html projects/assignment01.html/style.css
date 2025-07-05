@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* body {
+  background-image: url("htmlassignment/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+} */
+ body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("htmlassignment/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    justify-content: space-between;
+   
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+   color:
+#ffc233;
+      margin-top: 19px;
+      font-weight: 600;
+      font-size: 15px;  
+}
+nav ul{
+    display: flex;
+    gap: 60px;
+  transform: translateX(-20px);
+}
+.logo{
+    margin-left: 30px;
+    width: 130px;   
+    height: auto;  
+}
+button{
+    background-color: #ff515f;
+    padding: 1px 25px;
+    margin-right: 35px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    width: fit-content;
+    border: 1px solid white;
+}
+
+.hero-section p {
+   color: #ffc233;
+   text-align: center;
+   line-height: 80px;
+   font-size: 80px;
+   margin-top: 75px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;}
+/* .mybtn{
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+     /* justify-content: center;
+  align-items: center; */
+  .mybtn1{
+    font-size: 17px;
+  }
+/* .hero-section{
+    align-items: center;
+} */
+ .hero-section {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;         /* center horizontally */
+  justify-content: center;     /* center vertically */
+  /* height: calc(100vh - 100px); adjusts for nav height */
+  text-align: center;
+}
+
+.mybtn {
+  background-color: #ff515f;
+  padding: 10px 30px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid white;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.corner-img {
+  position: fixed;   
+  bottom: 0;         
+  right: 0;    
+  width: 110px;    
+  margin-right: 15px;
+  margin-bottom: 15px; 
+}
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.62); color: white;">
+    <h1>Javascript Quiz App</h1>
+
+    <div id="Quiz"></div>
+    <button id="Submit">Submit</button>
+<div id="Results"></div>
+
+<script>
+    const quizContainer = document.getElementById('Quiz');
+     const quizButtons = document.getElementById('Submit');
+      const quizResults = document.getElementById('Results');
+
+      const myQuestions = [
+        {
+            queston: "Who is girlfriend of Modi" , 
+            answers : {
+                a: "Melodi" ,
+                b: "Indra Gandhi" , 
+                c: "Dhinchak Pooja"
+            } , 
+            correctAnswer: "c"
+        },
+      ]
+
+      function showresults(){}
+      function buildQuiz(){}
+
+      buildQuiz() 
+
+    SubmitButton.addEventListener('click',showresults)
+</script>
+</body>
+</html>

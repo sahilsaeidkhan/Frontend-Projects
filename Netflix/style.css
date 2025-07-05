@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body, html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#page1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.749), rgba(0, 0, 0, 0.603)),url(./bgg.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 0;
+  padding-top: 20px; 
+}
+.logo{
+    height: auto;
+    width: 120px;
+     margin-left: -80px;
+}
+.btn{
+    margin-left: 500px;
+}
+.hero-section{
+    justify-content: center;
+    justify-items: center;
+    margin-top: 8rem;
+}
+p{
+    color: white;
+}
+.p1{
+    font-size: 45px;
+    font-weight: 900;
+}
+.p4{
+    font-size: 45px;
+    font-weight: 900;
+}
+.p5{
+    font-size: 45px;
+     font-weight: 900;
+}
+.p2{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.p3{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.btn3{
+    margin-top: 10px;
+        background: rgb(229, 9, 20);
+        color: white;
+        font-size: 1.9rem;
+        padding: 3px 7px;
+        border-radius: 5%; cursor: pointer;
+}
+.inp{
+    font-size: 1.9rem;
+    padding: 3px 7px;
+      border-radius: 5%;
+      margin-left: 490px;
+      margin-top: 20px;
+      background-color: #00000033;
+} */
+/* #page2{
+ height: 100vh;
+ width: 100vh;
+ background-color: black;
+} */
+ .btn2{
+      background: rgb(234, 13, 24);
+        color: white;
+        font-size: 1rem;
+        padding: 3px 7px;
+        cursor: pointer;
+} 
+/* .hrline{
+  height: 5px;
+  background-color:rgba(184, 40, 105, 1); 
+  width: 100%;
+  margin: 280px 0; 
+} */
+/* #cards{
+    height: 100%;
+    width: 100%;
+}
+.card1{
+    height: 297px;
+    width: 200px;
+    border: 1px solid white;
+} */

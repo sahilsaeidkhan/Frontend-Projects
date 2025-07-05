@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.dummy{
+  font-family: "Oleo Script Swash Caps", cursive;
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+}
+.root{
+--dark-choclate: #603936;
+--dark-red:#e63946;
+--light-color:#fff9c6;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.main-container{
+  width: 1152px;
+  margin: 0 auto;              
+}
+nav {
+ display : flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 42px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 16px;
+}
+nav ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+nav ul li a.active{
+  color: #e63946;
+}
+a.btn{
+  border-radius: 8px;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 400ms;
+}
+a.btn.light{
+  border: 1px solid black;
+  
+}
+a.btn.light:hover{
+  background-color: #e63946;
+  color: white;
+}
+/*hero section start*/
+
+.hero-container{
+  display: flex;
+  text-align: center;
+  height: calc(100vh - 130px);
+  position: relative;
+}
+.hero-container .hero-text h1 {
+   font-family: "Oleo Script Swash Caps", cursive;
+   font-size: 60px;
+   line-height: 100%;
+   font-weight: normal;
+}
+.hero-container .hero-text p.subtitle {
+font-family: "Open Sans", sans-serif;  
+ font-size: 16px;
+   width: 490px;
+   line-height:200%;
+   margin-top: 16px;
+   margin-bottom: 20px;
+   
+}
+a.btn.dark{
+  background-color: black;
+  color: white;
+  padding: 10px 32px;
+  display: inline-block;
+  border: 1px solid #603936;
+}
+a.btn.dark:hover{
+background-color:white;
+color: #603936;
+border: 1px solid #603936;
+}
+.hero-container .hero-image {
+  flex:1;
+}
+.hero-container .hero-text {
+  flex:1;
+}
+.hero-container .hero-image .hero-ground {
+  position: absolute;
+  width:360px;
+  height: 18px;
+  bottom: 60px;
+  background-color: rgb(33, 255, 29);
+  border-radius: 50%;
+  box-shadow: 0px 6px 15px 4 px rgb(89, 200, 237);
+  z-index: -100;
+}
+.social-icons{
+  position: absolute;
+  bottom: 50px;
+}
+
+
+
+
+
+/*hero section end*/
+/*--dark-choclate: #603936;
+--dark-red:#e63946;
+--light-color:#fff9c6;*/

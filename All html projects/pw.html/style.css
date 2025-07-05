@@ -1,0 +1,22 @@
+ /* .main{
+border: 2px solid black;
+height: 200px;
+width: 200px; 
+background-color: lightgreen;
+}  */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    animation-duration: 5s;
+    animation-name: colorChange;
+    animation-delay: 3s;
+}
+@keyframes colorChange {
+    from {
+        background-color:yellow;
+    }
+    to{
+        background-color: red;
+    }
+}
