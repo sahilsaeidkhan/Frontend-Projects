@@ -1,0 +1,7 @@
+[submodule "OIBSIP-frontend-project"]
+	path = OIBSIP-frontend-project
+	url = https://github.com/sahilsaeidkhan/-OIBSIP-frontend-project-.git
+
+[submodule "CODSOFT-frontend-project"]
+	path = CODSOFT-frontend-project
+	url = https://github.com/sahilsaeidkhan/CODSOFT-frontend-project-.git
